@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		460A6D25250A249F006A63FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 460A6D23250A249F006A63FA /* LaunchScreen.storyboard */; };
 		460A6D30250A249F006A63FA /* B_MYLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460A6D2F250A249F006A63FA /* B_MYLTests.swift */; };
 		460A6D3B250A249F006A63FA /* B_MYLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460A6D3A250A249F006A63FA /* B_MYLUITests.swift */; };
+		460A6D4A250A57DA006A63FA /* CTMediator+B.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460A6D49250A57DA006A63FA /* CTMediator+B.swift */; };
 		4C0AEE72F0D16ADA861B2CF8 /* Pods_B_MYL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D46981172116803F54BA6ED /* Pods_B_MYL.framework */; };
 		779E1E48B8A2482EBD2FB03B /* Target_B_MYL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A713D64E4D8FC41C7B293F5D /* Target_B_MYL.swift */; };
 		D79C758FEB8E377181480460 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07F81102E9971E185852821 /* DemoViewController.swift */; };
@@ -40,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0B8FD0616F3A8886A7A3056A /* Pods-B_MYL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-B_MYL.debug.xcconfig"; path = "Target Support Files/Pods-B_MYL/Pods-B_MYL.debug.xcconfig"; sourceTree = "<group>"; };
-		121D261BC9796A2F526EC1B3 /* B_MYL.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text.script.ruby; name = B_MYL.podspec; path = ../B_MYL.podspec; sourceTree = "<group>"; };
+		121D261BC9796A2F526EC1B3 /* B_MYL.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = B_MYL.podspec; path = ../B_MYL.podspec; sourceTree = "<group>"; };
 		460A6D15250A249B006A63FA /* B_MYL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = B_MYL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		460A6D18250A249B006A63FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		460A6D1A250A249B006A63FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +56,8 @@
 		460A6D36250A249F006A63FA /* B_MYLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = B_MYLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		460A6D3A250A249F006A63FA /* B_MYLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = B_MYLUITests.swift; sourceTree = "<group>"; };
 		460A6D3C250A249F006A63FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59D40F03318153F3AD5EBD06 /* B_MYL_Extension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text.script.ruby; name = B_MYL_Extension.podspec; path = ../B_MYL_Extension.podspec; sourceTree = "<group>"; };
+		460A6D49250A57DA006A63FA /* CTMediator+B.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CTMediator+B.swift"; sourceTree = "<group>"; };
+		59D40F03318153F3AD5EBD06 /* B_MYL_Extension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = B_MYL_Extension.podspec; path = ../B_MYL_Extension.podspec; sourceTree = "<group>"; };
 		5CDE456F151151D04686B7EB /* B_MYL_Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = B_MYL_Extension.swift; path = Extension/B_MYL_Extension.swift; sourceTree = "<group>"; };
 		5D46981172116803F54BA6ED /* Pods_B_MYL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_B_MYL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A713D64E4D8FC41C7B293F5D /* Target_B_MYL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Target_B_MYL.swift; path = Source/Target/Target_B_MYL.swift; sourceTree = "<group>"; };
@@ -95,7 +97,6 @@
 				0B8FD0616F3A8886A7A3056A /* Pods-B_MYL.debug.xcconfig */,
 				E07D177CA417732BFD47AF1E /* Pods-B_MYL.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -157,6 +158,15 @@
 			path = B_MYLUITests;
 			sourceTree = "<group>";
 		};
+		460A6D48250A57C9006A63FA /* CTMediator+B */ = {
+			isa = PBXGroup;
+			children = (
+				460A6D49250A57DA006A63FA /* CTMediator+B.swift */,
+			);
+			name = "CTMediator+B";
+			path = "Source/CTMediator+B";
+			sourceTree = "<group>";
+		};
 		504B67E44141EF8980DAD25A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +194,7 @@
 		9247E3B45A63AC49ABBC8BA6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				460A6D48250A57C9006A63FA /* CTMediator+B */,
 				6A1B58AD551A336E87837F5B /* Target */,
 				F07F81102E9971E185852821 /* DemoViewController.swift */,
 			);
@@ -370,6 +381,7 @@
 				460A6D1B250A249B006A63FA /* SceneDelegate.swift in Sources */,
 				779E1E48B8A2482EBD2FB03B /* Target_B_MYL.swift in Sources */,
 				D79C758FEB8E377181480460 /* DemoViewController.swift in Sources */,
+				460A6D4A250A57DA006A63FA /* CTMediator+B.swift in Sources */,
 				3A675E19FC1FABEDC3568887 /* B_MYL_Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
